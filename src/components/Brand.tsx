@@ -1,7 +1,7 @@
 import React from 'react';
 import { Group, ActionIcon, useMantineColorScheme, Box } from '@mantine/core';
 import { IconSun, IconMoonStars } from '@tabler/icons';
-import logo from "./images/logo.png";
+import logo from "../images/logo.png";
 
 export function Brand() {
   //const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -18,9 +18,9 @@ export function Brand() {
       })}
     >
       <Group position="apart">
-        
+      <img src={logo} alt="" width ="50" height = "50" />
         <ActionIcon variant="default" size={30}>
-          icons
+          DAO site
         </ActionIcon>
       </Group>
     </Box>

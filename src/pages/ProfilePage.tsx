@@ -1,12 +1,10 @@
 import React from "react";
 import { Text } from "@mantine/core";
 
-
-
-const Profile = () => {
+const ProfilePage = () => {
     return (
-       <Text>Profile</Text>
+       <Text>Profile Page</Text>
     )
   }
 
-  export default Profile;
+  export default ProfilePage;
