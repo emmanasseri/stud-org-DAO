@@ -7,6 +7,7 @@ import VotingPage from "../pages/VotingPage";
 import TasksPage from "../pages/TasksPage";
 import ProfilePage from "../pages/ProfilePage";
 import LandingPage from "../pages/LandingPage";
+import React from "react";
 
 
 const link = [
