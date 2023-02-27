@@ -3,6 +3,7 @@ import { ThemeProvider } from "./ThemeProvider";
 import { Brand } from "./components/Brand";
 import { MainLinks } from "./components/MainLinks";
 import logo from "./images/logo.png";
+import React from "react";
 
 export default function App() {
   return (
