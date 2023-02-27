@@ -1,5 +1,11 @@
 import { Text, Button, Stack, AppShell} from "@mantine/core";
 import { ThemeProvider } from "./ThemeProvider";
+
+import { Brand } from "./components/Brand";
+import { MainLinks } from "./components/MainLinks";
+import logo from "./images/logo.png";
+import React from "react";
+
 import NavBarComponent from "./components/NavBarComponent";
 
 const link = [
@@ -9,6 +15,8 @@ const link = [
   { link: "/Tasks", label: "Tasks" },
   { link: "/Profile", label: "Profile" },
 ];
+
+
 
 export default function App() {
   return (
