@@ -1,12 +1,15 @@
 import React from 'react';
 import { IconGitPullRequest, IconAlertCircle, IconMessages, IconDatabase } from '@tabler/icons';
 import { ThemeIcon, UnstyledButton, Group, Text } from '@mantine/core';
+import { ChartBar, ListCheck, UserCircle} from "tabler-icons-react";
+import { Icon } from 'tabler-icons-react';
 import logo from "../images/logo.png";
 
 interface MainLinkProps {
-  icon: string;
+  icon: React.ReactNode;
   color: string;
   label: string;
+  route: string;
 }
 
 function MainLink({ icon, color, label }: MainLinkProps) {
@@ -37,10 +40,10 @@ function MainLink({ icon, color, label }: MainLinkProps) {
 }
 
 const data = [
-  { icon: "icon", color: 'blue', label: 'Leaderboard' },
-  { icon: "icon", color: 'teal', label: 'Tasks' },
-  { icon: "icon", color: 'violet', label: 'Voting' },
-  { icon: "icon", color: 'grape', label: 'Profile' },
+  { icon: <ChartBar size={16}/>, color: 'blue', label: 'Leaderboard', route: '../pages/LeaderboardPage' },
+  { icon: <ListCheck size={16}/>, color: 'teal', label: 'Tasks', route: '../pages/LeaderboardPage' },
+  { icon: <ChartBar size={16}/>, color: 'violet', label: 'Voting', route: '../pages/LeaderboardPage' },
+  { icon: <UserCircle size={16}/>, color: 'grape', label: 'Profile', route: '../pages/LeaderboardPage' },
 ];
 
 export function MainLinks() {
