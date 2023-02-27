@@ -1,12 +1,10 @@
 import React from "react";
 import { Text } from "@mantine/core";
 
-
-
-const TasksPage = () => {
+const LandingPage = () => {
     return (
-       <Text>Tasks</Text>
+       <Text>Landing Page</Text>
     )
   }
 
-  export default TasksPage;
+  export default LandingPage;
