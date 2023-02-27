@@ -1,5 +1,6 @@
 import { Text, Button, Stack, AppShell, Navbar, Header } from "@mantine/core";
 import { ThemeProvider } from "./ThemeProvider";
+import { Brand } from './components/Brand'
 import logo from './images/logo.png';
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
           <Navbar width={{ base: 300 }}  p="xs">
             <Navbar.Section>section 1 with logo</Navbar.Section>
             <Navbar.Section grow mt="md">
-              {/* Links sections */}
+            <Brand />
             </Navbar.Section>
             <Navbar.Section>{/* Footer with user */}</Navbar.Section>
           </Navbar>
