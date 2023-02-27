@@ -12,6 +12,14 @@ interface MainLinkProps {
   route: string;
 }
 
+const link = [
+  { link: "/", label: "Home" },
+  { link: "/Leaderboard", label: "Leaderboard" },
+  { link: "/Voting", label: "Voting" },
+  { link: "/Tasks", label: "Tasks" },
+  { link: "/Profile", label: "Profile" },
+];
+
 function MainLink({ icon, color, label }: MainLinkProps) {
   return (
     <UnstyledButton
