@@ -1,24 +1,23 @@
-import { Text, Button, Stack, AppShell, Navbar, Header } from "@mantine/core";
+import { Text, Button, Stack, AppShell} from "@mantine/core";
 import { ThemeProvider } from "./ThemeProvider";
-import { Brand } from "./components/Brand";
-import { MainLinks } from "./components/MainLinks";
-import logo from "./images/logo.png";
+import NavBarComponent from "./components/NavBarComponent";
+
+const link = [
+  { link: "/", label: "Home" },
+  { link: "/Leaderboard", label: "Leaderboard" },
+  { link: "/Voting", label: "Voting" },
+  { link: "/Tasks", label: "Tasks" },
+  { link: "/Profile", label: "Profile" },
+];
 
 export default function App() {
   return (
     <ThemeProvider>
+      
       <AppShell
         padding="md"
         navbar={
-          <Navbar width={{ base: 300 }} p="xs">
-            <Navbar.Section>
-              <Brand />
-            </Navbar.Section>
-            <Navbar.Section grow mt="md">
-              <MainLinks />
-            </Navbar.Section>
-            <Navbar.Section>{/* Footer with user */}</Navbar.Section>
-          </Navbar>
+          <NavBarComponent/>
         }
        
         styles={(theme) => ({
@@ -30,6 +29,7 @@ export default function App() {
           },
         })}
       >
+        
         <Stack align="center" mt={50}>
           <Text size="xl" weight={500}>
             DAO site!
